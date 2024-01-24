@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/iv_app"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/iv_app"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        tools:text="应用名称" />
+
+    <TextView
+        android:id="@+id/tv_pack_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/iv_app"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="com.example.app" />
+
+</RelativeLayout>
